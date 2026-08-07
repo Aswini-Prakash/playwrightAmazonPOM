@@ -12,8 +12,4 @@ class ResultPage:
     def validateCartCount(self):
         return int(self.cart_count.text_content())
     
-    
-
-    
-        
 
