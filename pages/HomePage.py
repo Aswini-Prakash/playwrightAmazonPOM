@@ -6,9 +6,6 @@ class Homepage:
         self.searchbtn = page.locator("#nav-search-submit-button")
         
 
-
-
-
     def validateVisibilityOfSignIn(self):
         expect(self.loginbtn).to_be_visible()
     def clickOnSignin(self):

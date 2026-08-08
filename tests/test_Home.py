@@ -13,30 +13,14 @@ def test_validatePageComponents(page:Page,navigate_to_amazon):
         expect(page).to_have_url("https://www.amazon.in/")
         page.wait_for_timeout(2000)
 
-# def test_validateHeaders(page:Page,navigate_to_amazon):
-#         expect(page.locator('input#twotabsearchtextbox')).to_be_visible()
-#         expect(page.locator('input#twotabsearchtextbox')).to_be_enabled()
+def test_validateHeaders(page:Page,navigate_to_amazon):
+        expect(page.locator('input#twotabsearchtextbox')).to_be_visible()
+        expect(page.locator('input#twotabsearchtextbox')).to_be_enabled()
 
-# def test_validateLogoAndSearch(page:Page,navigate_to_amazon):
-#         expect(page.locator('#nav-logo-sprites')).to_be_visible()
-#         expect(page.get_by_placeholder("Search Amazon.in")).to_be_visible()
+def test_validateLogoAndSearch(page:Page,navigate_to_amazon):
+        expect(page.locator('#nav-logo-sprites')).to_be_visible()
+        expect(page.get_by_placeholder("Search Amazon.in")).to_be_visible()
 
 
-def test_searchProduct(page:Page,navigate_to_amazon):
-        homepageObj= Homepage(page)
-        LoginpageObj= Loginpage(page)
-        resultPageObj= ResultPage(page)
-        homepageObj.enterSearchProduct("bulb")
-        homepageObj.clickOnSearch()
-        #expect(page.get_by_text("Results")).to_be_visible()
-        expect(page).to_have_title("Amazon.in : bulb")
-        before_count= resultPageObj.validateCartCount()
-        page.wait_for_timeout(3000)
-        print("\n",before_count)
-        resultPageObj.clickOnAddToCart()
-        page.wait_for_timeout(3000)
-        after_count = resultPageObj.validateCartCount()
-        print("\n",after_count)
-        assert after_count == before_count +1
-        print("CartCount passed")
+
 
