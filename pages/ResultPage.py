@@ -5,7 +5,8 @@ class ResultPage:
         self.addTocartbtn = lambda product: page.locator(f'(//h2[contains(@aria-label,"{product}")]/ancestor::div[@data-component-type="s-search-result"]//input[@aria-label="Add to cart"])[1]')        
         self.cart_count = page.locator('span[id="nav-cart-count"]')
         #self.productlink = page.locator('//h2[contains(@aria-label,"{product}")]')
-        self.booklink = page.locator('(//h2[contains(@aria-label,"We Are There For Each Other: An Intense Love Story of 4 Friends on a Road Trip of a Lifetime")])[1]')
+        self.booklink = page.locator('(//h2[contains(@aria-label,"We Are There for Each Other")])[1]')
+        self.resulttxt = page.get_by_role("heading",name="Results",exact=True)
         
     
 
