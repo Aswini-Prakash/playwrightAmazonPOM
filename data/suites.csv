@@ -1,5 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
 "passed","Sun Aug 16 11:18:16 UTC 2026","Sun Aug 16 11:18:17 UTC 2026","1011","tests","test_Home","","","","test_validateVisibilityOnCarticonReturnsAndOrdersSigin[chromium]",""
-"passed","Sun Aug 16 11:18:14 UTC 2026","Sun Aug 16 11:18:15 UTC 2026","1063","tests","test_Home","","","","test_validateLogoAndSearch[chromium]",""
 "failed","Sun Aug 16 11:18:07 UTC 2026","Sun Aug 16 11:18:12 UTC 2026","5008","tests","test_Home","","","","test_validateHeaders[chromium]",""
 "passed","Sun Aug 16 11:17:59 UTC 2026","Sun Aug 16 11:18:06 UTC 2026","7064","tests","test_Home","","","","test_validatePageComponents[chromium]",""
+"passed","Sun Aug 16 11:18:14 UTC 2026","Sun Aug 16 11:18:15 UTC 2026","1063","tests","test_Home","","","","test_validateLogoAndSearch[chromium]",""
