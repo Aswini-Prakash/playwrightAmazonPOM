@@ -5,7 +5,9 @@
 # 5. playwright install
 # 6. allure set up
 # 7. executing testcase
-# 8. generate report
+# 8. generate report.
+# 9. completed
+
 
 
 name: playwright python automation 1 july
