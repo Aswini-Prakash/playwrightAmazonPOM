@@ -3,9 +3,11 @@ import pytest
 from pages.HomePage import Homepage
 from pages.ResultPage import ResultPage
 from utils.serachitemsJsonutil import searchiteamjson_load
+from utils.searchitemsExcelutil import searchitemExcel_load
 #serach_items = ['laptop','smartphone','pen','bag','xyzabc1235']
 
-serach_items = searchiteamjson_load()
+#serach_items = searchiteamjson_load()
+serach_items = searchitemExcel_load()
 @pytest.mark.validsearchitem
 @pytest.mark.parametrize("item",serach_items)
 def test_search_items(item,page:Page,navigate_to_amazon):

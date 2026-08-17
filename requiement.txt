@@ -1,0 +1,8 @@
+playwright
+pytest-xdist
+pytest
+pytest-playwright
+openpyxl
+python-dotenv
+allure-pytest
+pytest-html
