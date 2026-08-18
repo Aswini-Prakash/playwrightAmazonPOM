@@ -1,0 +1,3 @@
+Product: Orient Electric 12W High Glow LED bulb
+Cart count: 2
+Subtotal message: Subtotal (2 items):
